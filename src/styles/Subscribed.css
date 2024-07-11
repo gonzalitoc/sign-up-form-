@@ -1,0 +1,41 @@
+@import '../index.css';
+
+.subscribed {
+  text-align: start;
+
+  display: contents;
+}
+
+.titleSub {
+  font-size: 40px;
+  margin: 20px 0 0;
+  font-weight: bold;
+  color: #000;
+  line-height: normal;
+}
+
+.paragraphSub {
+  margin: 12px 0 0;
+  color: #000;
+}
+
+.span {
+  font-weight: bold;
+}
+
+.button {
+  background-color: #17184d;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  margin-top: 24px;
+  padding: 12px 0;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 2px solid #17184d;
+  color: #17184d;
+}

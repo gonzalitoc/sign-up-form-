@@ -1,0 +1,164 @@
+@import '../index.css';
+
+.container {
+  align-items: center;
+  display: flex;
+  margin: 0 -20px;
+}
+
+.content:first-of-type {
+  text-align: start;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 50px;
+}
+
+.content:last-of-type {
+  margin: 0 20px;
+}
+
+.title {
+  font-size: 60px;
+  margin: 60px 0 0;
+  color: #000;
+}
+
+.paragraph {
+  margin: 12px 0 0;
+  color: #000;
+  font-size: 18px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+.item:first-of-type {
+  margin-top: 24px;
+}
+
+.item:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+.icon {
+  padding-right: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.form--error .input {
+  border: 2px solid red;
+  color: red;
+  background-color: #ffe8e6;
+}
+
+.form--error .form-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-item .span {
+  display: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.form--error .span {
+  color: red;
+  display: block;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input {
+  outline: none;
+  border: 2px solid #efefef;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.button {
+  background-color: #17184d;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  margin-top: 24px;
+  padding: 12px 0;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 2px solid #17184d;
+  color: #17184d;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    margin: 0;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .content:first-of-type,
+  .content:last-of-type {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content:first-of-type,
+  .content:last-of-type {
+    margin: 0;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 40px;
+    margin: 10px 0 0%;
+  }
+
+  .image {
+    width: 100%;
+    content: url('../assets//images/illustration-sign-up-mobile.svg');
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .content:first-of-type {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 30px;
+    margin: 10px 0 0;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    margin: 8px 0 0;
+  }
+
+  .item {
+    margin-top: 8px;
+  }
+}
