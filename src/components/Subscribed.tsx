@@ -8,7 +8,7 @@ interface SubcribedProps {
 function Subscribed({ email }: SubcribedProps) {
   return (
     <section className="subscribed">
-      <div>
+      <div className="itemSub">
         <img src={iconSucess} alt="checkbox icon" />
         <h2 className="titleSub">Thanks for subscribing!</h2>
         <p className="paragraphSub">
